@@ -1,0 +1,17 @@
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\bin\Debug\net6.0\Models.dll
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\bin\Debug\net6.0\Models.pdb
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+D:\Moamen\Self_Learining\ADVA_Test\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
