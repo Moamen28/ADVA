@@ -1,0 +1,59 @@
+<!-- Form to add new employee -->
+<div class="container my-3">
+  <h3>Add New Employee</h3>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="employeeName" class="form-label">Employee Name</label>
+      <input type="text" class="form-control" id="employeeName" [(ngModel)]="newEmployee.name" placeholder="Employee Name" name="employeeName" required>
+    </div>
+    <div class="col-md-6">
+      <label for="salary" class="form-label">Salary</label>
+      <input type="number" class="form-control" id="salary" [(ngModel)]="newEmployee.salary" placeholder="Salary" name="salary" required>
+    </div>
+    <div class="col-md-6">
+      <label for="managerId" class="form-label">Manager ID</label>
+      <input type="number" class="form-control" id="managerId" [(ngModel)]="newEmployee.managerId" placeholder="Manager ID" name="managerId">
+    </div>
+    <div class="col-md-6">
+      <label for="departmentId" class="form-label">Department ID</label>
+      <input type="number" class="form-control" id="departmentId" [(ngModel)]="newEmployee.departmentId" placeholder="Department ID" name="departmentId" required>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="button" (click)="addEmployee()">Add Employee</button>
+    </div>
+  </form>
+</div>
+
+<!-- Button to load all employees -->
+<div class="container my-3">
+  <button class="btn btn-secondary" (click)="loadEmployees()">Show All Employees</button>
+</div>
+
+<!-- Table of employees -->
+<div class="container my-3" *ngIf="employees.length > 0">
+  <h2>Employee List</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Manager ID</th>
+        <th>Department ID</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Loop through employees -->
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.salary }}</td>
+        <td>{{ emp.managerId }}</td>
+        <td>{{ emp.departmentId }}</td>
+        <td>
+          <button class="btn btn-warning btn-sm" (click)="selectEmployeeForUpdate(emp)">Update</button>
+          <button class="btn btn-danger btn-sm" (click)="deleteEmployee(emp.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

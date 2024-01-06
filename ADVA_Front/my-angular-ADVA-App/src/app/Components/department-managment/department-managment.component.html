@@ -1,0 +1,58 @@
+<!-- Add New Department Form with managerId -->
+<div class="mb-3">
+    <h3>Add New Department</h3>
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="newDepartment.name" placeholder="Department Name" name="departmentName" required>
+      <input type="number" class="form-control" [(ngModel)]="newDepartment.managerId" placeholder="Manager ID" name="managerId">
+      <button class="btn btn-outline-secondary" type="button" (click)="addNewDepartment()">Add Department</button>
+    </div>
+  </div>
+  <button class="btn btn-primary mb-3" (click)="loadDepartments()">Show All Departments</button>
+
+  <div class="container mb-3" *ngIf="departments.length > 0">
+    <h2>Department Management</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>Department Name</th>
+              <th>Manager</th>
+              <th>Employees</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let dept of departments">
+              <td>{{ dept.name }}</td>
+              <td>{{ dept.managerName || 'No Manager' }}</td>
+              <td>
+                <!-- Assuming you want to list employee names here -->
+                <span *ngFor="let emp of dept.employees; let i = index">{{ emp.name }}<span *ngIf="i < dept.employees.length - 1">, </span></span>
+              </td>
+              <td>
+                <!-- Delete button -->
+                <button class="btn btn-danger btn-sm" (click)="deleteDepartment(dept.id)">Delete</button>
+                 <!-- Edit button -->
+                <button class="btn btn-primary btn-sm" (click)="selectDepartmentForUpdate(dept)">Update</button>
+    
+              </td>
+            </tr>
+          </tbody>
+
+    </table>
+  </div>
+
+  <div *ngIf="selectedDepartment" class="mb-3">
+    <h3>Update Department: {{ selectedDepartment.name }}</h3>
+    <form class="form-inline" (ngSubmit)="updateDepartment()">
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="name" class="sr-only">Department Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="selectedDepartment.name" name="name" placeholder="Department Name" required>
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="managerId" class="sr-only">Manager ID</label>
+        <input type="number" class="form-control" id="managerId" [(ngModel)]="selectedDepartment.managerId" name="managerId" placeholder="Manager ID">
+      </div>
+      <button type="submit" class="btn btn-success mb-2">Update Department</button>
+    </form>
+  </div>
+  

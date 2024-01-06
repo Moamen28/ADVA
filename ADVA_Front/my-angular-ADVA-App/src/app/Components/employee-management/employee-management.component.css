@@ -1,0 +1,5 @@
+:host {
+    display: block; /* ensure the :host element is block-level */
+    background-color: #f8f9fa; /* Example color - light gray */
+    min-height: 100vh; /* Optional: Set minimum height to fill the screen */
+  }

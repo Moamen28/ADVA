@@ -1,0 +1,23 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+:host {
+  display: block; 
+  background-color: #f8f9fa; /* Example color - light gray */
+  min-height: 100vh; 
+}
