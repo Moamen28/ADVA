@@ -49,21 +49,21 @@ namespace Repositories.Repository
         public async Task<T> AddAsync(T entity)
         {
             await DbSet.AddAsync(entity);
-            await Context.SaveChangesAsync();
+            
             return entity;
         }
 
         public async Task<T> UpdateAsync(T entity)
         {
             DbSet.Update(entity);
-            await Context.SaveChangesAsync();
+           
             return entity;
         }
 
         public async Task<T> RemoveAsync(T entity)
         {
             DbSet.Remove(entity);
-            await Context.SaveChangesAsync();
+            
             return entity;
         }
 
